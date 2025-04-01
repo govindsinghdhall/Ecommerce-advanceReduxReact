@@ -7,6 +7,7 @@ const cartSlice = createSlice({
     totalQuantity: 0,
   },
   reducers: {
+    // gets new items from payload and overrides in redux store
     replaceCart(state, action) {
       state.totalQuantity = action.payload.totalQuantity;
       state.items = action.payload.items;

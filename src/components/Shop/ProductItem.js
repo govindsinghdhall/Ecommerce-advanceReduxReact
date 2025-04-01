@@ -12,6 +12,7 @@ const ProductItem = (props) => {
 
   const addToCartHandler = () => {
     const newTotalQuantity = cart.totalQuantity + 1;
+    // cart.totalQuantity = cart.totalQuantity + 1;
 
     const updatedItems = cart.items.slice(); // create copy via slice to avoid mutating original state
     const existingItem = updatedItems.find((item) => item.id === id);
